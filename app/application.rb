@@ -2,8 +2,7 @@ class Application
   
   def call(env)
     resp = Rack::Reponse.new
-    time_1 = Kernal()
-    
+    if Time.now
   end 
   
   
