@@ -1,13 +1,15 @@
-class Application 
-  
+class Application
+
   def call(env)
-    resp = Rack::Reponse.new
+    resp = Rack::Response.new
+
     if Time.now.hour < 12
       resp.write "Good Morning!"
-    else 
+    else
       resp.write "Good Afternoon!"
-    end 
+    end
+
     resp.finish
-  end 
-  
+  end
+
 end 
